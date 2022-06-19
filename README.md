@@ -13,13 +13,12 @@ hosting an django app to heroku steps
   - STATIC_ROOT = os.path.join(BASE_DIR, 'static') top the bottom of settings.py
   - django_heroku.settings(locals())  top the bottom of settings.py
 
-4)git init
-  git add .
-  git commit -m "first commit"
-
-  heroku login
-  heroku create app_name
-  git push heroku master
-  heroku run python manage.py migrate
+4)Pushing to heroku server
+  - git add .
+  - git commit -m "first commit"
+  - heroku login
+  - heroku create app_name
+  - git push heroku master
+  - heroku run python manage.py migrate
 
 
